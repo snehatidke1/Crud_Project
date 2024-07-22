@@ -1,0 +1,8 @@
+<h2> Create a student</h3>
+<%= form_with model:@student do |f| %>
+<%= f.label:name%>
+<%= f.text_field :name,required: true , placeholder:"Enter you name" %><br>
+<%= f.label:age%>
+<%= f.text_field :age ,required: true , placeholder:"Enter your age" %><br>
+<%= f.submit %>
+<% end %>
